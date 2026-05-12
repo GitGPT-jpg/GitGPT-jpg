@@ -29,7 +29,7 @@ My background is in telecom engineering delivery and technical support, so I car
 **当前聚焦方向**
 - AI Agent 工程
 - 工作流自动化
-- 工具调用系统（Tool-Calling）
+- 工具调用系统
 - AI 应用工程化
 - 全栈 AI 产品
 
