@@ -1,4 +1,4 @@
-# Jiang Cheng / 姜澄 👋
+# Jiang Cheng / 江承 👋
 
 <p>
   <a href="#english"> <img src="https://img.shields.io/badge/Language-English-1f6feb?style=for-the-badge" alt="English" /> </a>
