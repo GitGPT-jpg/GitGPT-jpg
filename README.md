@@ -137,12 +137,10 @@ LLM + TTS + RVC + memory stack for long-term conversational interaction.
 
 ---
 
-## Contact / Links
+## Contact
 
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: `your-email@domain.com`
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/your-link)
-
+- GitHub: [@GitGPT-jpg](https://github.com/GitGPT-jpg)
+- 
 > If your team is exploring AI workflow automation, agent infrastructure, or AI application delivery, feel free to connect.
 
 ---
@@ -151,6 +149,6 @@ LLM + TTS + RVC + memory stack for long-term conversational interaction.
 
 <!-- Replace `your-username` with your actual GitHub username -->
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=default)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?GitGPT-jpg=GitGPT-jpg&show_icons=true&theme=default)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?GitGPT-jpg=GitGPT-jpg&layout=compact)
