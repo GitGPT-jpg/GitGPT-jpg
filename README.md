@@ -40,7 +40,7 @@ Electron + Next.js productivity app with RPG-style goal tracking and AI-assisted
 ### Currently following
 
 Staying close to OpenAI, Claude, Gemini, DeepSeek, and open-source agent projects.  
-Main areas of interest: AI workflow, agent orchestration, automation, tool-calling, AI coding.
+Main areas of interest: AI workflow, agent orchestration, automation, tool-calling, Vibe coding.
 
 ---
 
@@ -84,7 +84,7 @@ Electron + Next.js 效率应用，RPG 风格目标追踪 + AI 辅助规划。
 ### 最近在关注
 
 持续跟进：OpenAI、Claude、Gemini、DeepSeek，以及一些开源 Agent 项目。  
-主要兴趣方向：AI workflow、Agent 编排、自动化、Tool Calling、AI coding。
+主要兴趣方向：AI workflow、Agent 编排、自动化、Tool Calling、Vibe coding。
 
 ---
 
