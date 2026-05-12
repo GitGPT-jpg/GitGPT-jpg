@@ -1,10 +1,39 @@
-# Hi, I'm an AI Workflow & Agent Engineer
+# Jiang Cheng / 姜澄 👋
 
-I build production-oriented AI systems that connect **LLMs, tools, and business workflows** into deployable applications.
+<p>
+  <a href="#english"> <img src="https://img.shields.io/badge/Language-English-1f6feb?style=for-the-badge" alt="English" /> </a>
+  <a href="#中文"> <img src="https://img.shields.io/badge/语言-中文-e67e22?style=for-the-badge" alt="中文" /> </a>
+</p>
 
-From telecom engineering delivery to AI application engineering, my work focuses on one theme:
+## English
 
-> **turning real operational problems into reliable AI-powered automation systems.**
+I build AI workflow systems that connect **LLMs, tools, and real-world operations**.
+
+My background is in telecom engineering delivery and technical support, so I care more about reliability, workflow control, and deployability than isolated demos.
+
+**Current focus**
+- AI Agent Engineering
+- Workflow Automation
+- Tool-Calling Systems
+- AI Application Engineering
+- Full-stack AI Products
+
+> My work is centered on one theme: turning operational problems into reliable AI-powered automation systems.
+
+## 中文
+
+我专注构建把 **LLM、工具系统与真实业务流程** 连接起来的 AI 工作流系统。
+
+我来自通信工程交付与技术支持一线，因此相比“演示型 Demo”，我更关注系统的可靠性、流程控制能力和可部署性。
+
+**当前聚焦方向**
+- AI Agent 工程
+- 工作流自动化
+- 工具调用系统（Tool-Calling）
+- AI 应用工程化
+- 全栈 AI 产品
+
+> 我的工作始终围绕一个主题：把真实运营问题转化为可靠的 AI 自动化系统。
 
 ---
 
@@ -144,4 +173,3 @@ LLM + TTS + RVC + memory stack for long-term conversational interaction.
 > If your team is exploring AI workflow automation, agent infrastructure, or AI application delivery, feel free to connect.
 
 ---
-
