@@ -1,4 +1,4 @@
-# Jiang Cheng / 江承
+# Hi, I'm Jiang Cheng / 江承 👋
 
 **Language:** [English](#english) · [中文](#chinese)
 
@@ -21,26 +21,26 @@ Python · FastAPI · Node.js · TypeScript · Next.js · React · Docker · SQLi
 
 ---
 
-### Projects
+### 🛠️ Projects
 
-**[latam-intel-bot](https://github.com/GitGPT-jpg/latam-intel-bot)**  
+**🌎 [latam-intel-bot](https://github.com/GitGPT-jpg/latam-intel-bot)**  
 AI news workflow system for Latin America monitoring. RSS aggregation, LLM-generated daily briefings, WhatsApp delivery. This project was where I first really understood that AI can participate in a complete workflow — not just answer questions.
 
-**[android-llm-agent](https://github.com/GitGPT-jpg/android-llm-agent)**  
+**📱 [android-llm-agent](https://github.com/GitGPT-jpg/android-llm-agent)**  
 Android automation agent using OCR + ADB + LLM for multi-step UI task execution. Hit a lot of issues along the way: state management, long-task execution, tool-call stability, context switching. Still being improved. That experience is what got me more seriously interested in agent systems.
 
-**[voice-companion-agent](https://github.com/GitGPT-jpg/voice-companion-agent)**  
+**🎙️ [voice-companion-agent](https://github.com/GitGPT-jpg/voice-companion-agent)**  
 Conversational agent with persistent memory, dynamic persona, and TTS/RVC voice. An experiment in longer-term context and session-to-session consistency.
 
-**[jianghu-nightrain](https://github.com/GitGPT-jpg/jianghu-nightrain)**  
+**🎮 [jianghu-nightrain](https://github.com/GitGPT-jpg/jianghu-nightrain)**  
 Electron + Next.js productivity app with RPG-style goal tracking and AI-assisted planning.
 
 ---
 
-### Currently following
+### 👀 Currently following
 
 Staying close to OpenAI, Claude, Gemini, DeepSeek, and open-source agent projects.  
-Main areas of interest: AI workflow, agent orchestration, automation, tool-calling, Vibe coding.
+Main areas of interest: AI workflow, agent orchestration, automation, tool-calling, AI coding.
 
 ---
 
@@ -65,26 +65,26 @@ Python · FastAPI · Node.js · TypeScript · Next.js · React · Docker · SQLi
 
 ---
 
-### 做过的一些项目
+### 🛠️ 做过的一些项目
 
-**[latam-intel-bot](https://github.com/GitGPT-jpg/latam-intel-bot)**  
+**🌎 [latam-intel-bot](https://github.com/GitGPT-jpg/latam-intel-bot)**  
 拉美新闻监控的 AI 工作流系统。RSS 聚合、LLM 生成日报、WhatsApp 推送。这个项目让我第一次真正理解到：AI 可以参与一个完整的 workflow，不只是回答问题。
 
-**[android-llm-agent](https://github.com/GitGPT-jpg/android-llm-agent)**  
+**📱 [android-llm-agent](https://github.com/GitGPT-jpg/android-llm-agent)**  
 基于 OCR + ADB + LLM 的 Android 多步骤 UI 自动化 Agent。做的过程中踩了很多坑：状态管理、长任务执行、工具调用稳定性、上下文切换。目前还在持续完善。这个项目让我对 Agent 系统越来越感兴趣。
 
-**[voice-companion-agent](https://github.com/GitGPT-jpg/voice-companion-agent)**  
+**🎙️ [voice-companion-agent](https://github.com/GitGPT-jpg/voice-companion-agent)**  
 有持久记忆、动态人设和 TTS/RVC 语音的对话 Agent。主要是在探索长期上下文和跨会话一致性。
 
-**[jianghu-nightrain](https://github.com/GitGPT-jpg/jianghu-nightrain)**  
+**🎮 [jianghu-nightrain](https://github.com/GitGPT-jpg/jianghu-nightrain)**  
 Electron + Next.js 效率应用，RPG 风格目标追踪 + AI 辅助规划。
 
 ---
 
-### 最近在关注
+### 👀 最近在关注
 
 持续跟进：OpenAI、Claude、Gemini、DeepSeek，以及一些开源 Agent 项目。  
-主要兴趣方向：AI workflow、Agent 编排、自动化、Tool Calling、Vibe coding。
+主要兴趣方向：AI workflow、Agent 编排、自动化、Tool Calling、AI coding。
 
 ---
 
