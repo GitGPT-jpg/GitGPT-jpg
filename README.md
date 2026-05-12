@@ -1,6 +1,6 @@
-# Jiang Cheng / 姜澄 👋
+# Jiang Cheng / 江承 👋
 
-**Language / 语言：** [English](#english) · [中文](#中文)
+**Language：** [English](#english) · [中文](#中文)
 
 ## English
 
@@ -44,7 +44,7 @@ My background is in telecom engineering delivery and technical support, so I car
 
 ### 中文
 - 目前岗位：**中兴通讯运营商产品工程师**（工程交付 + 技术支持 + 工程数字化）。
-- 职业定位：**AI 工作流工程师 / Agent 工程师 / AI 应用工程师**。
+- 职业定位：**AI 全干工程师 / Agent 工程师 / AI 应用工程师**。
 - 核心特征：把 **AI 能力** 与 **工程执行** 连接起来，覆盖需求分析、部署落地与持续迭代。
 - 典型产出：可运行的系统、流程与 Agent 工作流，而不只是单点 Demo。
 
