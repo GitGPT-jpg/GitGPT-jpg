@@ -8,66 +8,53 @@
 
 ## English
 
-I work on AI-integrated workflow systems — specifically, what happens after the model call returns.
+Most of what I build is about getting AI to *do* things — not respond, execute.
 
-Background in telecom engineering delivery and technical support. That context matters: I think about operational continuity, failure handling, and integration complexity before I think about features.
+Not chat interfaces. Workflows.
 
-**What I actually work on**
+Specifically: pulling information from multiple sources, running it through analysis, generating reports, pushing output somewhere useful. Stringing together steps that would otherwise require someone sitting there manually coordinating each one.
 
-- Orchestration layers that connect LLMs to external systems and deterministic business logic
-- Agent execution loops with controlled state, retries, and observable output
-- Automation pipelines that replace manual operational work — not demos, deployed systems
-- Tools for engineering teams that use AI to accelerate delivery rather than replace judgment
+I came up in telecom engineering delivery — field work, integration, operations. That background shows up in how I think about systems:
 
-**Technical areas of focus**
+- Will this still run at 3am?
+- What happens when step 4 of 7 fails?
+- How does the system recover, and what state is it in when it does?
 
-- Workflow orchestration and execution control in multi-step agent systems
-- Reliability patterns for LLM-based automation: fallback, retry, verification
-- Human-in-the-loop design for operational workflows where errors are expensive
-- State management in long-running agentic tasks
-- Evaluation and observability for tool-calling agents
+After you deploy a few AI pipelines in practice, the interesting problems stop being "which model" and start being: state management, retry logic, tool-call stability, long-task execution, context management, workflow orchestration.
+
+That's where most of my attention is now.
 
 **Stack**  
 Python · FastAPI · Node.js · TypeScript · Next.js · Electron · SQLite · Docker
 
-**LLMs in regular use**  
-Claude · GPT-4 · Gemini · DeepSeek · GLM
-
 ---
 
-### Projects
-
-These are systems built around specific operational problems.
+### Some things I built
 
 **[latam-intel-bot](https://github.com/GitGPT-jpg/latam-intel-bot)**  
-Information pipeline for Latin America geopolitical monitoring. Multi-source ingestion (35 RSS feeds, 5 APIs), scheduled LLM report generation, WhatsApp Business delivery. The real engineering problem: normalizing inconsistent sources and keeping the pipeline running under partial failures.
+Automated intelligence workflow for Latin America news monitoring. The problem is easy to describe: collect → normalize → analyze → deliver. Making it run reliably across 35 RSS feeds and 5 APIs without constant babysitting was the actual work.
 
 **[android-llm-agent](https://github.com/GitGPT-jpg/android-llm-agent)**  
-ADB-based agent for Android UI automation. OCR extracts screen state, LLM selects actions, a state machine manages multi-step execution. The core constraint: LLM outputs are non-deterministic; the surrounding system has to be.
+Android automation agent using ADB + OCR + LLM for multi-step UI task execution. Building this made clear that the hard parts of agents aren't the model — they're state, tool-call chains, error recovery, and what to do when the UI doesn't look like what the model expected.
 
 **[voice-companion-agent](https://github.com/GitGPT-jpg/voice-companion-agent)**  
-Conversational agent with persistent memory, dynamic persona, and TTS/RVC voice synthesis. The focus is long-horizon context management and interaction consistency across sessions — not just "it talks."
+Conversational agent with persistent memory, dynamic persona, and TTS/RVC voice. The interesting part is session-to-session consistency — how do you maintain a coherent identity across separate conversations?
 
 **[jianghu-nightrain](https://github.com/GitGPT-jpg/jianghu-nightrain)**  
-Electron + Next.js productivity system with RPG-style goal tracking and AI-assisted planning. Local-first, Supabase sync.
+Electron + Next.js productivity system. RPG-style goal tracking with AI-assisted planning. Local-first.
 
 ---
 
-### A few things I've come to believe
+### What I've come to think
 
-- The reliability of an AI system is mostly determined by the non-AI parts.
-- Agents fail at edges, not the happy path. Design for that first.
-- Orchestration logic is business logic. It shouldn't live inside a prompt.
-- Observability on LLM outputs isn't optional once something is deployed.
-- The gap between "works in demo" and "runs reliably" is most of the actual work.
+Most AI systems don't fail because the model wasn't good enough.
 
----
+They fail because:
+- The workflow around the model wasn't designed for failure
+- State wasn't tracked properly
+- No one thought about what happens when step 4 of 7 times out
 
-### Current direction
-
-- Agent runtime design: building execution environments that are testable and fault-tolerant
-- Workflow patterns for operational AI: monitoring, triage, report generation, decision support
-- The overlap between telecom OSS/BSS operational thinking and AI workflow architecture
+The engineering layer is where most of the real work lives.
 
 ---
 
@@ -79,66 +66,55 @@ Electron + Next.js productivity system with RPG-style goal tracking and AI-assis
 
 ## 中文
 
-我的工作聚焦于 AI 集成工作流系统 —— 具体来说，是模型调用返回之后发生的那些事情。
+我折腾的大部分东西，都是让 AI 去"执行事情"，而不是聊天。
 
-通信工程交付与技术支持出身。这个背景有实际影响：在考虑功能之前，我会先考虑运营连续性、故障处理和集成复杂度。
+不是对话框，是工作流。
 
-**实际在做的事**
+具体来说：从多个来源采集信息，经过分析处理，生成报告，推送到目标位置。把那些原本需要有人盯着手动协调的步骤，串成一条自动跑的流程。
 
-- 编排层设计：将 LLM 与外部系统和确定性业务逻辑连接起来
-- 带有状态控制、重试机制和可观测输出的 Agent 执行闭环
-- 替代人工运营工作的自动化流水线 —— 不是演示，是已部署的系统
-- 帮助工程团队用 AI 提升交付效率、而非替代工程判断的工具
+我做工程交付出身 —— 通信行业，现场，集成，运维。这个背景会影响我看系统的方式：
 
-**技术关注方向**
+- 这个东西凌晨三点还能跑吗？
+- 第 4 步失败了，后面怎么办？
+- 系统怎么恢复，恢复后处于什么状态？
 
-- 多步骤 Agent 系统中的工作流编排与执行控制
-- 基于 LLM 的自动化可靠性模式：降级、重试、校验
-- 高成本错误场景下的人机协同系统设计
-- 长周期 Agentic 任务的状态管理
-- 工具调用 Agent 的评测与可观测性
+真正部署过几条 AI 流水线之后，有趣的问题就不再是"用哪个模型"了。
+
+变成了：状态管理、重试逻辑、工具调用稳定性、长任务执行、上下文管理、workflow orchestration。
+
+这些是我现在主要花注意力的地方。
 
 **技术栈**  
 Python · FastAPI · Node.js · TypeScript · Next.js · Electron · SQLite · Docker
 
-**日常使用的 LLM**  
-Claude · GPT-4 · Gemini · DeepSeek · GLM
-
 ---
 
-### 项目
-
-这些系统围绕具体的运营问题而构建。
+### 做过的一些东西
 
 **[latam-intel-bot](https://github.com/GitGPT-jpg/latam-intel-bot)**  
-面向拉丁美洲地缘政治监控的信息流水线。多源采集（35 个 RSS + 5 个 API），LLM 定时生成报告，WhatsApp Business 推送。工程难点在于跨不同来源的数据标准化，以及在部分节点故障时保持流水线稳定运行。
+拉美新闻监控的自动化情报工作流。要解决的问题很容易描述：采集 → 标准化 → 分析 → 推送。真正的工作是让它跑在 35 个 RSS 源和 5 个 API 上，不需要人持续盯着。
 
 **[android-llm-agent](https://github.com/GitGPT-jpg/android-llm-agent)**  
-基于 ADB 的 Android UI 自动化 Agent。OCR 提取屏幕状态，LLM 进行动作决策，状态机管理多步骤任务执行。核心约束：LLM 输出是非确定性的，外围系统必须是确定性的。
+基于 ADB + OCR + LLM 的 Android 多步骤 UI 自动化 Agent。做这个项目之后越来越清楚：Agent 难的部分不是模型，是状态、工具调用链路、错误恢复，以及 UI 和模型预期不符时怎么办。
 
 **[voice-companion-agent](https://github.com/GitGPT-jpg/voice-companion-agent)**  
-具备持久记忆、动态人设和 TTS/RVC 语音合成的对话 Agent。重点是长程上下文管理和跨会话的交互一致性 —— 不只是"它会说话"。
+有持久记忆、动态人设和 TTS/RVC 语音的对话 Agent。有意思的部分在于跨会话的一致性 —— 怎么在不同对话之间维持连贯的"身份"。
 
 **[jianghu-nightrain](https://github.com/GitGPT-jpg/jianghu-nightrain)**  
-Electron + Next.js 效率系统，RPG 风格目标追踪 + AI 辅助规划。本地优先，支持 Supabase 同步。
+Electron + Next.js 效率系统。RPG 风格目标追踪 + AI 辅助规划。本地优先。
 
 ---
 
-### 一些实践中形成的判断
+### 逐渐形成的一些判断
 
-- AI 系统的可靠性，主要由非 AI 的部分决定。
-- Agent 在边界条件下失败，而不是在 happy path 上。要优先针对这点设计。
-- 编排逻辑就是业务逻辑。不应该让它住在 prompt 里。
-- LLM 输出的可观测性，一旦上线就不是可选项。
-- "演示可用"和"稳定运行"之间的差距，才是真正的大部分工作。
+大部分 AI 系统最后失败，不是因为模型不够强。
 
----
+而是：
+- 模型外面的 workflow 没有为失败做设计
+- 状态没有正确追踪
+- 没人想过第 4 步超时后会发生什么
 
-### 当前方向
-
-- Agent 运行时设计：如何构建可测试、可容错的执行环境
-- 面向运营场景的 AI 工作流模式：监控、分诊、报告生成、决策支持
-- 通信行业 OSS/BSS 运营思维与 AI 工作流架构之间的交集
+工程层，才是大部分真正工作所在的地方。
 
 ---
 
