@@ -8,53 +8,39 @@
 
 ## English
 
-Most of what I build is about getting AI to *do* things — not respond, execute.
+I work in telecom engineering delivery and technical support. On the side, I've been building AI workflow tools — mostly around problems I notice in day-to-day operational work.
 
-Not chat interfaces. Workflows.
+Started getting into AI application development about two years ago. I regularly use Claude, ChatGPT, Codex, Gemini, and DeepSeek, and like to try new tools and workflows as they come out.
 
-Specifically: pulling information from multiple sources, running it through analysis, generating reports, pushing output somewhere useful. Stringing together steps that would otherwise require someone sitting there manually coordinating each one.
+What I'm actually interested in isn't "AI" as a concept — it's whether AI can fit into a real workflow and reduce the repetitive coordination work that takes up so much time in engineering environments. Things like automatically organizing information from multiple sources, generating reports, running multi-step tasks without manual handoffs.
 
-I came up in telecom engineering delivery — field work, integration, operations. That background shows up in how I think about systems:
-
-- Will this still run at 3am?
-- What happens when step 4 of 7 fails?
-- How does the system recover, and what state is it in when it does?
-
-After you deploy a few AI pipelines in practice, the interesting problems stop being "which model" and start being: state management, retry logic, tool-call stability, long-task execution, context management, workflow orchestration.
-
-That's where most of my attention is now.
+I'm still learning, but I keep building things and paying attention to what's happening.
 
 **Stack**  
-Python · FastAPI · Node.js · TypeScript · Next.js · Electron · SQLite · Docker
+Python · FastAPI · Node.js · TypeScript · Next.js · React · Docker · SQLite
 
 ---
 
-### Some things I built
+### Projects
 
 **[latam-intel-bot](https://github.com/GitGPT-jpg/latam-intel-bot)**  
-Automated intelligence workflow for Latin America news monitoring. The problem is easy to describe: collect → normalize → analyze → deliver. Making it run reliably across 35 RSS feeds and 5 APIs without constant babysitting was the actual work.
+AI news workflow system for Latin America monitoring. RSS aggregation, LLM-generated daily briefings, WhatsApp delivery. This project was where I first really understood that AI can participate in a complete workflow — not just answer questions.
 
 **[android-llm-agent](https://github.com/GitGPT-jpg/android-llm-agent)**  
-Android automation agent using ADB + OCR + LLM for multi-step UI task execution. Building this made clear that the hard parts of agents aren't the model — they're state, tool-call chains, error recovery, and what to do when the UI doesn't look like what the model expected.
+Android automation agent using OCR + ADB + LLM for multi-step UI task execution. Hit a lot of issues along the way: state management, long-task execution, tool-call stability, context switching. Still being improved. That experience is what got me more seriously interested in agent systems.
 
 **[voice-companion-agent](https://github.com/GitGPT-jpg/voice-companion-agent)**  
-Conversational agent with persistent memory, dynamic persona, and TTS/RVC voice. The interesting part is session-to-session consistency — how do you maintain a coherent identity across separate conversations?
+Conversational agent with persistent memory, dynamic persona, and TTS/RVC voice. An experiment in longer-term context and session-to-session consistency.
 
 **[jianghu-nightrain](https://github.com/GitGPT-jpg/jianghu-nightrain)**  
-Electron + Next.js productivity system. RPG-style goal tracking with AI-assisted planning. Local-first.
+Electron + Next.js productivity app with RPG-style goal tracking and AI-assisted planning.
 
 ---
 
-### What I've come to think
+### Currently following
 
-Most AI systems don't fail because the model wasn't good enough.
-
-They fail because:
-- The workflow around the model wasn't designed for failure
-- State wasn't tracked properly
-- No one thought about what happens when step 4 of 7 times out
-
-The engineering layer is where most of the real work lives.
+Staying close to OpenAI, Claude, Gemini, DeepSeek, and open-source agent projects.  
+Main areas of interest: AI workflow, agent orchestration, automation, tool-calling, AI coding.
 
 ---
 
@@ -66,55 +52,39 @@ The engineering layer is where most of the real work lives.
 
 ## 中文
 
-我折腾的大部分东西，都是让 AI 去"执行事情"，而不是聊天。
+目前在通信行业做工程交付和技术支持相关工作，也会参与一些内部数字化和自动化的事情。
 
-不是对话框，是工作流。
+这两年开始越来越关注 AI 应用方向，平时会长期使用 Claude、ChatGPT、Codex、Gemini、DeepSeek 等工具，也喜欢第一时间去试新的 AI 产品和 workflow。
 
-具体来说：从多个来源采集信息，经过分析处理，生成报告，推送到目标位置。把那些原本需要有人盯着手动协调的步骤，串成一条自动跑的流程。
+我最感兴趣的不是"AI"这个概念本身，而是：AI 怎么真正接进流程里，怎么帮人减少重复的协调性工作。比如自动整理多源信息、生成报告、多步骤任务的无人工中转执行这些。
 
-我做工程交付出身 —— 通信行业，现场，集成，运维。这个背景会影响我看系统的方式：
-
-- 这个东西凌晨三点还能跑吗？
-- 第 4 步失败了，后面怎么办？
-- 系统怎么恢复，恢复后处于什么状态？
-
-真正部署过几条 AI 流水线之后，有趣的问题就不再是"用哪个模型"了。
-
-变成了：状态管理、重试逻辑、工具调用稳定性、长任务执行、上下文管理、workflow orchestration。
-
-这些是我现在主要花注意力的地方。
+我现在还在持续学习阶段，但会一直做东西、持续关注这个方向。
 
 **技术栈**  
-Python · FastAPI · Node.js · TypeScript · Next.js · Electron · SQLite · Docker
+Python · FastAPI · Node.js · TypeScript · Next.js · React · Docker · SQLite
 
 ---
 
-### 做过的一些东西
+### 做过的一些项目
 
 **[latam-intel-bot](https://github.com/GitGPT-jpg/latam-intel-bot)**  
-拉美新闻监控的自动化情报工作流。要解决的问题很容易描述：采集 → 标准化 → 分析 → 推送。真正的工作是让它跑在 35 个 RSS 源和 5 个 API 上，不需要人持续盯着。
+拉美新闻监控的 AI 工作流系统。RSS 聚合、LLM 生成日报、WhatsApp 推送。这个项目让我第一次真正理解到：AI 可以参与一个完整的 workflow，不只是回答问题。
 
 **[android-llm-agent](https://github.com/GitGPT-jpg/android-llm-agent)**  
-基于 ADB + OCR + LLM 的 Android 多步骤 UI 自动化 Agent。做这个项目之后越来越清楚：Agent 难的部分不是模型，是状态、工具调用链路、错误恢复，以及 UI 和模型预期不符时怎么办。
+基于 OCR + ADB + LLM 的 Android 多步骤 UI 自动化 Agent。做的过程中踩了很多坑：状态管理、长任务执行、工具调用稳定性、上下文切换。目前还在持续完善。这个项目让我对 Agent 系统越来越感兴趣。
 
 **[voice-companion-agent](https://github.com/GitGPT-jpg/voice-companion-agent)**  
-有持久记忆、动态人设和 TTS/RVC 语音的对话 Agent。有意思的部分在于跨会话的一致性 —— 怎么在不同对话之间维持连贯的"身份"。
+有持久记忆、动态人设和 TTS/RVC 语音的对话 Agent。主要是在探索长期上下文和跨会话一致性。
 
 **[jianghu-nightrain](https://github.com/GitGPT-jpg/jianghu-nightrain)**  
-Electron + Next.js 效率系统。RPG 风格目标追踪 + AI 辅助规划。本地优先。
+Electron + Next.js 效率应用，RPG 风格目标追踪 + AI 辅助规划。
 
 ---
 
-### 逐渐形成的一些判断
+### 最近在关注
 
-大部分 AI 系统最后失败，不是因为模型不够强。
-
-而是：
-- 模型外面的 workflow 没有为失败做设计
-- 状态没有正确追踪
-- 没人想过第 4 步超时后会发生什么
-
-工程层，才是大部分真正工作所在的地方。
+持续跟进：OpenAI、Claude、Gemini、DeepSeek，以及一些开源 Agent 项目。  
+主要兴趣方向：AI workflow、Agent 编排、自动化、Tool Calling、AI coding。
 
 ---
 
