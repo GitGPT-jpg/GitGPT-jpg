@@ -4,7 +4,7 @@
 
 ---
 
-> 🏠 [我的主页](https://gitgpt-jpg.github.io/) · ✦ [一束光，从智利到北京](https://gitgpt-jpg.github.io/jiangchen/)
+> ✦ [我的主页：一束光](https://gitgpt-jpg.github.io/)
 
 ---
 
