@@ -1,4 +1,4 @@
-# Hi, I'm Jiang Cheng / 江承 👋
+# Hi, I'm Jiang Chen / 江尘 👋
 
 **Language:** [English](#english) · [中文](#chinese)
 
