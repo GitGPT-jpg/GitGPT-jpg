@@ -4,6 +4,10 @@
 
 ---
 
+> 🏠 [我的主页](https://gitgpt-jpg.github.io/) · ✦ [一束光，从智利到北京](https://gitgpt-jpg.github.io/jiangchen/)
+
+---
+
 <a id="english"></a>
 
 ## English
